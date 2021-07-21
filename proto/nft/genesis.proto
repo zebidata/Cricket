@@ -1,0 +1,12 @@
+syntax = "proto3";
+package zebi.cric.nft;
+
+import "gogoproto/gogo.proto";
+import "nft/nft.proto";
+
+option go_package = "github.com/zebi/cric/x/nft/types";
+
+// GenesisState defines the NFT module's genesis state
+message GenesisState {
+    repeated Collection collections = 1 [ (gogoproto.nullable) = false ];
+}

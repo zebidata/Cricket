@@ -1,0 +1,11 @@
+genesis:
+  app_state:
+    staking:
+      params:
+        bond_denom: "cric"
+accounts:
+  - name: alice
+    coins: ["100000000000000000cric"]
+validator:
+  name: alice
+  staked: "10000000000000000cric"
